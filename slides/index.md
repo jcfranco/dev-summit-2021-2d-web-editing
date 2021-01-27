@@ -69,6 +69,10 @@ ArcGIS API for JavaScript
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
 
 # WebMap Forms
+* Consistent editing experience 
+* Improve the quality of your data
+* Provide logic and structure
+* Data driven rules and validation
 
 ---
 

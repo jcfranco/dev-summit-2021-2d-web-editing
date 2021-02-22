@@ -48,7 +48,7 @@ ArcGIS API for JavaScript
 ## Web editing in the browser
 
 1. What to add: [FeatureTemplates](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html)
-2. Geometry: [Sketch](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html)
+2. Geometry: [SketchViewModel](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html)
 3. Fields/attributes: [FeatureForm](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html)
 4. [FeatureLayer.applyEdits](http://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
 <hr>
@@ -61,8 +61,6 @@ ArcGIS API for JavaScript
 ## Editor widget
 
 [<img src="./images/editor-in-action.gif" height="400" style="margin-left:10px; margin-right: 10px;"/>](../demos/basic-editing/)
-
-✨**New in 4.11**✨
 
 ---
 
@@ -99,7 +97,7 @@ ArcGIS API for JavaScript
   * Field order
   * Label/description
   * Groups
-  * Visibility expression (✨New in 4.11✨)
+  * Visibility expression
 
 ---
 

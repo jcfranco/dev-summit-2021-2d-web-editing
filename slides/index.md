@@ -12,10 +12,10 @@
 
 ## Agenda
 
-* Web editing
-* Editor widget
+* Web Editing
+* Editor Widget
 * WebMap Forms
-* Custom workflows
+* Customizing the Editor
 * Q&A
 
 ---
@@ -67,6 +67,7 @@ ArcGIS API for JavaScript
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
 
 # Smart Forms
+
 * Consistent editing experience
 * Improve the quality of your data
 * Provide logic and structure
@@ -76,7 +77,7 @@ ArcGIS API for JavaScript
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
 
-# Custom Workflows
+# Customizing the Editor
 
 ---
 
@@ -149,9 +150,10 @@ ArcGIS API for JavaScript
 
 ## Recap
 
-* Web editing
-* Editor widgets
-* Custom workflows
+* Web editing overview 
+* OOB Editor features  
+* Smart Forms in the Editor 
+* Customized Editor 
 
 ---
 
@@ -167,13 +169,23 @@ ArcGIS API for JavaScript
 
 ---
 
-## Questions?
+# Questions? 🤔
 
-##### For example
+> Where can I find the slides/source?
 
-> 🤔 Where can I find the slides/source?
+[bit.ly/editing2dds21](http://bit.ly/editing2dds21)
 
-👉 [bit.ly/editing2dds21](http://bit.ly/editing2dds21) 👈
+> Where can I submit a question?
+
+[bit.ly/askjsapi](http://bit.ly/askjsapi)
+
+---
+
+<section data-markdown data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-5.png">
+
+Please provide your feedback for this session by clicking on the session survey link directly below the video
+
+<!-- .element: style="margin: 0 20%;" -->
 
 ---
 

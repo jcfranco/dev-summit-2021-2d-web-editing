@@ -50,6 +50,7 @@ ArcGIS API for JavaScript
 1. What to add: [FeatureTemplates](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html)
 2. Geometry: [SketchViewModel](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html)
 3. Fields/attributes: [FeatureForm](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html)
+3. Attachments: [Attachments](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html)
 4. [FeatureLayer.applyEdits](http://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
 <hr>
 5. Editor widget
@@ -65,6 +66,10 @@ ArcGIS API for JavaScript
 ---
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
+
+## Smart Forms
+
+---
 
 # Smart Forms
 
@@ -95,13 +100,13 @@ ArcGIS API for JavaScript
 
 ## Customization options
 
-- <!-- .element: class="fragment" data-fragment-index="0" --> Control edit options per layer
-  - <!-- .element: class="fragment" data-fragment-index="0" --> toggle whether add/update/delete/attachments are allowed
-- <!-- .element: class="fragment" data-fragment-index="1" --> Define form templates locally 
-- <!-- .element: class="fragment" data-fragment-index="2" --> Enable snapping
-- <!-- .element: class="fragment" data-fragment-index="3" --> Use properties from supporting widgets to tweak experience
-- <!-- .element: class="fragment" data-fragment-index="4" --> Start editor workflows at different steps
-- <!-- .element: class="fragment" data-fragment-index="5" --> Watch viewModel properties to react to workflow steps
+1. <!-- .element: class="fragment" data-fragment-index="0" --> Control edit options per layer
+    - <!-- .element: class="fragment" data-fragment-index="0" --> toggle whether add/update/delete/attachments are allowed
+1. <!-- .element: class="fragment" data-fragment-index="1" --> Define form templates locally 
+1. <!-- .element: class="fragment" data-fragment-index="2" --> Enable snapping
+1. <!-- .element: class="fragment" data-fragment-index="3" --> Use properties from supporting widgets to tweak experience
+1. <!-- .element: class="fragment" data-fragment-index="4" --> Start editor workflows at different steps
+1. <!-- .element: class="fragment" data-fragment-index="5" --> Watch viewModel properties to react to workflow steps
 
 ---
 

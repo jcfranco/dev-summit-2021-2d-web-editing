@@ -20,7 +20,11 @@
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-2.png" data-background-size="cover" -->
+## Web Editing
+
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
+
+---
 
 ## Data in a feature service
 
@@ -28,8 +32,6 @@
 * Editable
 
 ---
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-2.png" data-background-size="cover" -->
 
 ## Edit your feature layer
 
@@ -42,8 +44,6 @@ ArcGIS API for Python
 ArcGIS API for JavaScript
 
 ---
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-2.png" data-background-size="cover" -->
 
 ## Web editing in the browser
 
@@ -58,13 +58,13 @@ ArcGIS API for JavaScript
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
 
-## Editor widget
+## Demo
 
 [<img src="./images/editor-in-action.gif" height="400" style="margin-left:10px; margin-right: 10px;"/>](../demos/basic-editing/)
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
 
 # Smart Forms
 
@@ -75,78 +75,43 @@ ArcGIS API for JavaScript
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
-
-# Customizing the Editor
-
----
+## Demo
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
-
-## Form-based
-
-[<img src="images/ff-in-action.gif" height="400" style="margin-left:10px; margin-right: 10px;"/>](https://developers.arcgis.com/javascript/latest/sample-code/editing-groupedfeatureform/index.html)
-
-☝ `FeatureForm`
-
----
-
-## [`FeatureForm`](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html)
-
-* Renders input fields from attributes<!-- .element: class="fragment" data-fragment-index="1" -->
-* Configurable<!-- .element: class="fragment" data-fragment-index="2" -->
-  * Field order
-  * Label/description
-  * Groups
-  * Visibility expression
-
----
-
-## `FeatureForm` Demo
-
-[<img src="images/ff-demo.png" height="400" style="margin-left:10px; margin-right: 10px;"/>](../../demos/feature-form/index.html)
-
----
-
-## Advanced `FeatureForm` Demo
-
-[<img src="images/form-based-editing.gif" height="400" style="margin-left:10px; margin-right: 10px;"/>](https://jcfranco.github.io/dev-summit-2021-plenary-demos/form-based-editing/)
 
 ---
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
 
-# Geometry-based
-
-<img src="images/sketch-basic-updating.png" height="400" style="margin-left:10px; margin-right: 10px;"/>
-
-☝ `Sketch`
+## Customizing the Editor
 
 ---
 
-## [`Sketch`](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html)
+## Editor API
 
-* Provides ability to manipulate geometries<!-- .element: class="fragment" data-fragment-index="1" -->
-* Configurable<!-- .element: class="fragment" data-fragment-index="2" -->
-  * Tool options (create and update)
-  * Internal view listener for activating update workflow
+[ArcGIS SDK - Editor](https://next.sites.afd.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) 
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
+## Customization options
 
-## Geometry-based Demos
-
-* Sketch with applyEdits
-* SketchViewModel with applyEdits
-* Sketch with custom tools
-* Sketch with custom snapping and validation
-
-<!-- add screenshot for geometry-based demo -->
+- <!-- .element: class="fragment" data-fragment-index="0" -->Control edit options per layer
+  - <!-- .element: class="fragment" data-fragment-index="0" --> toggle whether add/update/delete/attachments are allowed
+- <!-- .element: class="fragment" data-fragment-index="1" -->Use `formInfo` locally to control how a form will display for a `FeatureLayer`
+- <!-- .element: class="fragment" data-fragment-index="2" -->Use `snappingOptions` to enable snapping
+- <!-- .element: class="fragment" data-fragment-index="3" -->Use props from supporting widgets to tweak experience
+- <!-- .element: class="fragment" data-fragment-index="4" -->Start editor workflows at different points
+- <!-- .element: class="fragment" data-fragment-index="5" -->Watch viewModel properties to act on editor workflow steps
 
 ---
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
+
+## Demo
+
+---
+
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
 
 ## Recap
 
@@ -164,10 +129,8 @@ ArcGIS API for JavaScript
 
 ---
 
-<!-- SURVEY SLIDE: -->
-<section data-markdown data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png">
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
 
----
 
 # Questions? 🤔
 

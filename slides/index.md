@@ -95,13 +95,13 @@ ArcGIS API for JavaScript
 
 ## Customization options
 
-- <!-- .element: class="fragment" data-fragment-index="0" -->Control edit options per layer
+- <!-- .element: class="fragment" data-fragment-index="0" --> Control edit options per layer
   - <!-- .element: class="fragment" data-fragment-index="0" --> toggle whether add/update/delete/attachments are allowed
-- <!-- .element: class="fragment" data-fragment-index="1" -->Use `formInfo` locally to control how a form will display for a `FeatureLayer`
-- <!-- .element: class="fragment" data-fragment-index="2" -->Use `snappingOptions` to enable snapping
-- <!-- .element: class="fragment" data-fragment-index="3" -->Use props from supporting widgets to tweak experience
-- <!-- .element: class="fragment" data-fragment-index="4" -->Start editor workflows at different points
-- <!-- .element: class="fragment" data-fragment-index="5" -->Watch viewModel properties to act on editor workflow steps
+- <!-- .element: class="fragment" data-fragment-index="1" --> Define form templates locally 
+- <!-- .element: class="fragment" data-fragment-index="2" --> Enable snapping
+- <!-- .element: class="fragment" data-fragment-index="3" --> Use properties from supporting widgets to tweak experience
+- <!-- .element: class="fragment" data-fragment-index="4" --> Start editor workflows at different steps
+- <!-- .element: class="fragment" data-fragment-index="5" --> Watch viewModel properties to react to workflow steps
 
 ---
 

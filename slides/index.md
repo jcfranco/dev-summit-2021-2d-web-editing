@@ -134,6 +134,14 @@ ArcGIS API for JavaScript
 
 ---
 
+<section data-markdown data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-5.png">
+
+Please provide your feedback for this session by clicking on the session survey link directly below the video
+
+<!-- .element: style="margin: 0 20%;" -->
+
+---
+
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
 
 
@@ -146,14 +154,6 @@ ArcGIS API for JavaScript
 > Where can I submit a question?
 
 [bit.ly/askjsapi](http://bit.ly/askjsapi)
-
----
-
-<section data-markdown data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-5.png">
-
-Please provide your feedback for this session by clicking on the session survey link directly below the video
-
-<!-- .element: style="margin: 0 20%;" -->
 
 ---
 

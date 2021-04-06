@@ -14,7 +14,7 @@
 
 * Web Editing
 * Editor Widget
-* WebMap Forms
+* Smart Forms
 * Customizing the Editor
 * Q&A
 

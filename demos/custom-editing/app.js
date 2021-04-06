@@ -9,28 +9,28 @@ const featureLayer = await setUpEditableLayer();
 const view = await setUpView(featureLayer);
 const editor = await setUpEditor(view);
 
-// 1. fine-tune layer editing operations
-//<editor-fold desc="...">
-/*editor.layerInfos = [
+//region 1. fine-tune layer editing operations
+/*
+editor.layerInfos = [
   {
     layer: featureLayer,
 
-    // 1.a. disable editing entirely for this layer
+    // 1. disable editing entirely for this layer
     // enabled: false
 
-    // 1.b. or you can configure more granular edit operations
+    // 1. or you can configure more granular edit operations
     addEnabled: true,
     updateEnabled: true,
     deleteEnabled: false,
 
-    // 1.c. whether to show the attachments UX
-    allowAttachments: false
+    // 1. whether to show the attachments UX
+    allowAttachments: true
   }
-];*/
-//</editor-fold>
+];
+*/
+//endregion
 
-// 2. use formTemplate to customize feature attribute form on the feature layer itself
-//<editor-fold desc="...">
+//region 2. define smart form, locally, on the feature layer itself
 // https://developers.arcgis.com/web-map-specification/objects/formInfo/
 /*
 featureLayer.formTemplate = {
@@ -44,7 +44,7 @@ featureLayer.formTemplate = {
       // 2. provide a user-friendly label
       label: "Trail Name"
 
-      // 2. override if field can be edited on the client-sided
+      // 2. override if field can be edited on the client-side
       // editable: false,
     },
     {
@@ -82,7 +82,7 @@ featureLayer.formTemplate = {
 
       // 2. specify input type (requires custom coded-value domain for this)
       input: {
-        type: "combo-box",
+        type: "radio-buttons",
         // 2. can also change the type
         // type: "radio-buttons",
 
@@ -114,20 +114,21 @@ featureLayer.formTemplate = {
   ]
 };
 */
-//</editor-fold>
+//endregion
 
-// 3. enable snapping
-//<editor-fold desc="...">
-/*editor.snappingOptions = {
+//region 3. enable snapping
+/*
+editor.snappingOptions = {
   enabled: true,
   // all specified layers here will be considered as candidates for snapping
-  snappingSources: [{ layer: featureLayer }]
-};*/
-//</editor-fold>
+  featureSources: [{ layer: featureLayer }]
+};
+*/
+//endregion
 
-// 4. use supportingWidgetDefaults to tweak UX
-//<editor-fold desc="...">
-/*editor.supportingWidgetDefaults = {
+//region 4. tweak options of supporting widgets
+/*
+editor.supportingWidgetDefaults = {
   sketch: {
     defaultUpdateOptions: {
       tool: "transform"
@@ -139,24 +140,27 @@ featureLayer.formTemplate = {
       editing: false
     }
   }
-};*/
-//</editor-fold>
+};
+*/
+//endregion
 
-// 5. start at a specific edit workflow
-//<editor-fold desc="...">
-/*await editor.startUpdateWorkflowAtFeatureEdit(
+//region 5. start at a specific edit workflow
+/*
+await editor.startUpdateWorkflowAtFeatureEdit(
   await queryForFirstFeature(view, featureLayer)
-);*/
-//</editor-fold>
+);
+*/
+//endregion
 
-// 6. watch viewModel props to know when steps are done
-//<editor-fold desc="...">
-/*editor.watch("activeWorkflow", (workflow, oldWorklow) => {
+//region 6. watch viewModel props to react to workflow toggling
+/*
+editor.watch("activeWorkflow", (workflow, oldWorkflow) => {
   if (!workflow) {
-    console.log(`${oldWorklow.type} workflow has been exited`);
+    console.log(`${oldWorkflow.type} workflow has been exited`);
     return;
   }
 
   console.log(`currently has active ${workflow.type} workflow`);
-});*/
-//</editor-fold>
+});
+*/
+//endregion

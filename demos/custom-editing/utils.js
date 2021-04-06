@@ -31,7 +31,7 @@ export async function queryForFirstFeature(view, featureLayer) {
 }
 
 export async function setUpEditableLayer() {
-  const featureLayer = new FeatureLayer("https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/El_Paso_Recreation_AttributeEditsOnly/FeatureServer/1");
+  const featureLayer = new FeatureLayer("https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/El_Paso_Recreation/FeatureServer/1");
   return featureLayer.load();
 }
 

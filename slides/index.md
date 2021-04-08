@@ -127,13 +127,6 @@ ArcGIS API for JavaScript
 
 ---
 
-## Additional Resources
-
-- [JavaScript API SDK](https://developers.arcgis.com/javascript/)
-- [Arcade - expression language](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html)
-
----
-
 <section data-markdown data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-5.png">
 
 Please provide your feedback for this session by clicking on the session survey link directly below the video
@@ -143,7 +136,6 @@ Please provide your feedback for this session by clicking on the session survey 
 ---
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
-
 
 # Questions? 🤔
 

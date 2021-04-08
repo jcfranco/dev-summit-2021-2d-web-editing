@@ -6,6 +6,8 @@
 #### Paul Barker
 #### JC Franco
 
+#### http://bit.ly/editing2dds21
+
 ---
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
@@ -13,7 +15,7 @@
 ## Agenda
 
 * Web Editing
-* Editor Widget
+* Editing Widgets
 * Smart Forms
 * Customizing the Editor
 * Q&A
@@ -26,20 +28,21 @@
 
 ---
 
-## Data in a feature service
+## Enable editing on feature service 
 
-* One or more feature layers
-* Editable
+* One or more [feature layers](https://developers.arcgis.com/rest/services-reference/feature-service.htm)
+* [Must be enabled for editing](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/editor-permissions-for-feature-services.htm)
+* [Constraints are set at the service level](./images/editor-permissions.png)
+  * Client app cannot override permissions set on service
+  * Consistent behavior across all clients
 
 ---
 
-## Edit your feature layer
+## Under the hood, it's just REST
 
-<u>ArcGIS REST API</u>
+[ArcGIS REST API](https://developers.arcgis.com/rest/services-reference/apply-edits-feature-service-.htm)
 
 ArcGIS Online
-
-ArcGIS API for Python
 
 ArcGIS API for JavaScript
 
@@ -47,23 +50,38 @@ ArcGIS API for JavaScript
 
 ## Web editing in the browser
 
-1. What to add: [FeatureTemplates](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html)
-2. Geometry: [SketchViewModel](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html)
-3. Fields/attributes: [FeatureForm](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html)
-3. Attachments: [Attachments](http://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html)
-4. [FeatureLayer.applyEdits](http://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
-<hr>
-5. Editor widget
+🔑 [Configurable widgets](https://hgonzago.esri.com/javascript/latest/api-reference/) | ⌨️ Granular APIs
+
+[<img src="./images/widgets.png" height="400" style="margin-left:10px; margin-right: 10px;"/>](https://hgonzago.esri.com/javascript/latest/api-reference/esri-widgets-Editor.html)
+
 
 ---
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
 
-## Demo
+## Sketch Demo
 
-[<img src="./images/editor-in-action.gif" height="400" style="margin-left:10px; margin-right: 10px;"/>](../demos/basic-editing/)
+[<img src="./images/sketch-demo.gif" height="400" style="margin-left:10px; margin-right: 10px;"/>](https://hgonzago.esri.com/javascript/latest/sample-code/sketch-geometries/)
 
 ---
+
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
+
+## Editor Demo
+
+[<img src="./images/editor-demo.gif" height="400" style="margin-left:10px; margin-right: 10px;"/>](https://hgonzago.esri.com/sites/4workspace/4.19/Editor/BasicUpdatedEditor.html)
+
+---
+
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-4.png" data-background-size="cover" -->
+
+## FeatureTable Demo
+
+[<img src="./images/featuretable-demo.gif" height="400" style="margin-left:10px; margin-right: 10px;"/>](https://hgonzago.esri.com/sites/4workspace/4.19/Editor/TableEditing.html)
+
+
+---
+
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2021/dev-summit/bg-3.png" data-background-size="cover" -->
 

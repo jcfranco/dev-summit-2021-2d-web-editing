@@ -131,7 +131,8 @@ editor.snappingOptions = {
 editor.supportingWidgetDefaults = {
   sketch: {
     defaultUpdateOptions: {
-      tool: "transform"
+      enableRotation: false,
+      enableScaling: false
     }
   },
   attachments: {

@@ -84,7 +84,7 @@ featureLayer.formTemplate = {
       input: {
         type: "radio-buttons",
         // 2. can also change the type
-        // type: "radio-buttons",
+        // type: "combo-box",
 
         // 2. customize no value option
         noValueOptionLabel: "Unspecified condition",
